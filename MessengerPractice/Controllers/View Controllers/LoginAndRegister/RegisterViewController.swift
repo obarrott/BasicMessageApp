@@ -21,10 +21,10 @@ class RegisterViewController: UIViewController {
         title = "Log In"
         
         view.backgroundColor = .white
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(didTapRegister))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
+//                                                            style: .done,
+//                                                            target: self,
+//                                                            action: #selector(didTapRegister))
         registerButton.addTarget(self,
                               action: #selector(registerButtonTapped),
                               for: .touchUpInside)
@@ -129,7 +129,7 @@ class RegisterViewController: UIViewController {
             }
             
             guard !exists else {
-                self?.alertUserLoginError(message: "A User account for that email address already exists.")
+                strongSelf.alertUserLoginError(message: "A User account for that email address already exists.")
                 return
             }
             
@@ -139,13 +139,18 @@ class RegisterViewController: UIViewController {
                     return
                 }
                 
+                UserDefaults.standard.setValue(email, forKey: "email")
+                UserDefaults.standard.setValue("\(firstName) \(lastName)", forKey: "name")
+                
                 let chatUser = MessageAppUser(firstName: firstName,
                                               lastName: lastName,
                                               emailAdress: email)
                 DatabaseController.shared.insertUser(with: chatUser, completion: { success in
                     if success {
                         // upload image
-                        guard let image = strongSelf.imageView.image, let data = image.pngData() else { return }
+                        guard let image = strongSelf.imageView.image,
+                            let data = image.pngData() else { return }
+                        
                         let fileName = chatUser.profilePictureFileName
                         StorageController.shared.uploadProfilePicture(with: data, fileName: fileName) { (result) in
                             switch result {
@@ -174,11 +179,11 @@ class RegisterViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    @objc private func didTapRegister() {
-        let vc = RegisterViewController()
-        vc.title = "Create Account"
-        navigationController?.pushViewController(vc, animated: true)
-    }
+//    @objc private func didTapRegister() {
+//        let vc = RegisterViewController()
+//        vc.title = "Create Account"
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
     
     // MARK: - Views
     private let scrollView: UIScrollView = {
@@ -253,7 +258,7 @@ class RegisterViewController: UIViewController {
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
         field.backgroundColor = .white
-        field.isSecureTextEntry = true
+        field.isSecureTextEntry = false
         return field
     }()
     
