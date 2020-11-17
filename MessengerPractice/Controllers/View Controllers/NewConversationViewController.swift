@@ -11,6 +11,7 @@ import JGProgressHUD
 
 class NewConversationViewController: UIViewController {
 
+    // MARK: - Properties
     private let spinner = JGProgressHUD()
     
     private let searchBar: UISearchBar = {
@@ -37,6 +38,7 @@ class NewConversationViewController: UIViewController {
         return label
     }()
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
@@ -49,12 +51,14 @@ class NewConversationViewController: UIViewController {
         searchBar.becomeFirstResponder()
     }
     
+    // MARK: - Helper Functions
     @objc private func dismissSelf() {
         dismiss(animated: true, completion: nil)
     }
 
 }
 
+// MARK: - Extensions
 extension NewConversationViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

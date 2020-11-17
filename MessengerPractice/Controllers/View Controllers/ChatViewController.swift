@@ -13,6 +13,7 @@ import MessageKit
 
 class ChatViewController: MessagesViewController {
     
+    // MARK: - Properties
     private var messages = [Message]()
     
     private let selfSender = Sender(photoURL: "",
@@ -20,9 +21,10 @@ class ChatViewController: MessagesViewController {
                                     displayName: "Owen Barrott")
     
 
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         
         messages.append(Message(sender: selfSender,
                                 messageId: "1",
@@ -38,8 +40,9 @@ class ChatViewController: MessagesViewController {
         messagesCollectionView.messagesDisplayDelegate = self
     }
 
-}
+}// End of Class
 
+// MARK: - Extensions
 extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate {
     func currentSender() -> SenderType {
         return selfSender

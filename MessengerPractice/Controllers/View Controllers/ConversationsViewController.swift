@@ -12,6 +12,7 @@ import JGProgressHUD
 
 class ConversationsViewController: UIViewController {
     
+    // MARK: - Properties
     private let spinner = JGProgressHUD(style: .dark)
     
     private let tableView: UITableView = {
@@ -30,6 +31,7 @@ class ConversationsViewController: UIViewController {
         return label
     }()
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(didTapComposeButton))
@@ -40,6 +42,7 @@ class ConversationsViewController: UIViewController {
         
     }
     
+    // MARK: - Helper Functions
     @objc private func didTapComposeButton(){
         let vc = NewConversationViewController()
         let navVC = UINavigationController(rootViewController: vc)
@@ -76,8 +79,9 @@ class ConversationsViewController: UIViewController {
     private func fetchConversations() {
         tableView.isHidden = false
     }
-}
+}// End of class
 
+// MARK: - Extensions
 extension ConversationsViewController: UITableViewDelegate, UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -86,7 +90,7 @@ extension ConversationsViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello World"
+        cell.textLabel?.text = "Tim Apple"
         cell.accessoryType = .disclosureIndicator
         return cell
     }

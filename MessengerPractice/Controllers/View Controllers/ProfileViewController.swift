@@ -20,7 +20,6 @@ class ProfileViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
 
 }
@@ -69,7 +68,5 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                                             handler: nil))
         
         present(actionSheet, animated: true)
-        
-        
     }
 }
