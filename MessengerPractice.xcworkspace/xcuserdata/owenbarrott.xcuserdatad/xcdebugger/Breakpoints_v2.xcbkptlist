@@ -190,8 +190,8 @@
             filePath = "MessengerPractice/Controllers/Model Controllers/DatabaseController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "325"
-            endingLineNumber = "325"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
             landmarkName = "getAllMessagesForConversation(with:completion:)"
             landmarkType = "7">
             <Locations>
@@ -238,8 +238,8 @@
             filePath = "MessengerPractice/Controllers/Model Controllers/DatabaseController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
             landmarkName = "getAllMessagesForConversation(with:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -248,6 +248,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0335F99A-D9FC-4D6B-AB3A-99ADEDE1ED5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MessengerPractice/Controllers/Model Controllers/DatabaseController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
+            landmarkName = "getAllMessagesForConversation(with:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90190BBC-343D-4D4C-85A7-0B20FB9BD020"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -263,22 +279,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "90190BBC-343D-4D4C-85A7-0B20FB9BD020"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MessengerPractice/Controllers/Model Controllers/DatabaseController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
-            landmarkName = "getAllMessagesForConversation(with:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5181B755-F1E8-4CFC-A4A6-9671C4B67129"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -286,8 +286,8 @@
             filePath = "MessengerPractice/Controllers/Model Controllers/DatabaseController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "getAllMessagesForConversation(with:completion:)"
             landmarkType = "7">
          </BreakpointContent>

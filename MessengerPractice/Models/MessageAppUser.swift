@@ -21,7 +21,7 @@ struct MessageAppUser {
     }
     
     var profilePictureFileName: String {
-        //owenbarrott-gamil-com_profile_picture.png
+        //owenbarrott-gmail-com_profile_picture.png
         return"\(safeEmail)_profile_picture.png"
     }
 }
