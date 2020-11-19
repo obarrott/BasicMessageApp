@@ -24,6 +24,8 @@
 		A67E3C2D255B194C00EA2235 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E3C2C255B194C00EA2235 /* NewConversationViewController.swift */; };
 		A67E3C2F255B196400EA2235 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E3C2E255B196400EA2235 /* ProfileViewController.swift */; };
 		A6CBCA5D25646C12006C3BBC /* DatabaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CBCA5C25646C11006C3BBC /* DatabaseErrors.swift */; };
+		A6CBCA6025649525006C3BBC /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CBCA5F25649525006C3BBC /* ConversationTableViewCell.swift */; };
+		A6CBCA6225657E5C006C3BBC /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CBCA6125657E5C006C3BBC /* Conversation.swift */; };
 		A6F921072563272E000A505F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F921062563272E000A505F /* ChatViewController.swift */; };
 		A6F92109256329F6000A505F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F92108256329F6000A505F /* Message.swift */; };
 		A6F9210B25632A58000A505F /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F9210A25632A58000A505F /* Sender.swift */; };
@@ -54,6 +56,8 @@
 		A67E3C2C255B194C00EA2235 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		A67E3C2E255B196400EA2235 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A6CBCA5C25646C11006C3BBC /* DatabaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseErrors.swift; sourceTree = "<group>"; };
+		A6CBCA5F25649525006C3BBC /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		A6CBCA6125657E5C006C3BBC /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		A6F921062563272E000A505F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A6F92108256329F6000A505F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A6F9210A25632A58000A505F /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		A67E3C20255B175D00EA2235 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6CBCA5E25649513006C3BBC /* New Group */,
 				A67E3C23255B179900EA2235 /* Storyboards */,
 			);
 			path = Views;
@@ -154,6 +159,7 @@
 				A618CC63255C993400C692B3 /* MessageAppUser.swift */,
 				A6F92108256329F6000A505F /* Message.swift */,
 				A6F9210A25632A58000A505F /* Sender.swift */,
+				A6CBCA6125657E5C006C3BBC /* Conversation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +192,14 @@
 				A67E3C26255B190700EA2235 /* RegisterViewController.swift */,
 			);
 			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		A6CBCA5E25649513006C3BBC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A6CBCA5F25649525006C3BBC /* ConversationTableViewCell.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A6F9210E25633235000A505F /* View Controllers */ = {
@@ -335,12 +349,14 @@
 				A67E3C10255B168100EA2235 /* ConversationsViewController.swift in Sources */,
 				A618CC62255C97DB00C692B3 /* DatabaseController.swift in Sources */,
 				A67E3C2B255B192B00EA2235 /* VideoPlayerViewController.swift in Sources */,
+				A6CBCA6225657E5C006C3BBC /* Conversation.swift in Sources */,
 				A618CC5D255C4CBC00C692B3 /* Extensions.swift in Sources */,
 				A67E3C0C255B168100EA2235 /* AppDelegate.swift in Sources */,
 				A6F921072563272E000A505F /* ChatViewController.swift in Sources */,
 				A6F9210D25633222000A505F /* StorageController.swift in Sources */,
 				A6F92111256337AF000A505F /* StorageErrors.swift in Sources */,
 				A67E3C2F255B196400EA2235 /* ProfileViewController.swift in Sources */,
+				A6CBCA6025649525006C3BBC /* ConversationTableViewCell.swift in Sources */,
 				A67E3C0E255B168100EA2235 /* SceneDelegate.swift in Sources */,
 				A67E3C29255B192400EA2235 /* PhotoViewerViewController.swift in Sources */,
 				A6F92109256329F6000A505F /* Message.swift in Sources */,
